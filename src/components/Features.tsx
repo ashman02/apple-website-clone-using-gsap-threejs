@@ -32,7 +32,7 @@ const Features = () => {
       }
     )
     animateWithGsap(".g_text", {y : 0, opacity : 1, ease : "power2.inOut"},)
-  })
+  }, [])
   return (
     <section className="h-full common-padding bg-zinc relative overflow-hidden">
       <div className="screen-max-width">
