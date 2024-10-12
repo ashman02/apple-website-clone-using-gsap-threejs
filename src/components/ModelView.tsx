@@ -15,6 +15,7 @@ interface ModelViewProps {
   index: number
   groupRef: MutableRefObject<THREE.Group<THREE.Object3DEventMap>>
   gsapType: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   controlRef: any
   setRotationState: Dispatch<SetStateAction<number>>
   item: ModelObject

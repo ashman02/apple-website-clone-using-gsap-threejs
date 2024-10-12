@@ -126,7 +126,7 @@ const VideoCarousel = () => {
         setVideo((prev) => ({
           ...prev,
           isEnd: true,
-          videoId: i + 1,
+          videoId: i !== undefined ? i + 1 : prev.videoId,
         }))
         break
       case "video-last":
